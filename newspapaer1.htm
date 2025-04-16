@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOJnews - Anime News</title>
+    <link rel="stylesheet" href="newspaper2.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">DOJnews</div>
+            <nav>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li class="dropdown">
+                        <a href="#">GENRES</a>
+                        <div class="dropdown_content">
+                            <a href="#">Releases</a>
+                            <a href="#">Games</a>
+                            <a href="#">Ongoing</a>
+                        </div>
+                    </li>
+                    <li><a href="#">REVIEWS</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                </ul>
+            </nav>
+            <div class="actions">
+                <button class="signin_btn">Sign In</button>
+                <button class="mode_toggle" onclick="toggleMode()"><i class='bx bxs-sun'></i></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="main">
+        <section class="latest_news">
+            <div class="container">
+                <h2>Latest News</h2>
+                <div class="latest_news_container" id="latestNewsSlider">
+                    <div class="slider_container" >
+                        <div class="slide">
+                            <img src="blacktorch.jpg" alt="Latest Anime News 1">
+                            <p class="latest2">The manga called "black torch" by author "Tsuyoshi Takaki" is expected to have its anime adaptation</p>
+                            <p class="written1">by john asmin &nbsp; 5 hours ago</p>
+                        </div>
+                        <div class="slide">
+                            <img src="solo levelling.jpg" alt="Latest Anime News 2">
+                            <p class="latest3">episode 11 of solo levelling is set to be released on sunday, march 16 2025</p>
+                            <p class="written2">by Radio Times &nbsp; 1day ago</p>
+                        </div>
+                        <div class="slide">
+                            <img src="Group 1.png" alt="Latest Anime News 3">
+                            <p class="head">MAPPA staff reveals the terrible working conditions as an animator</p>
+                            <span>by chettiyar gamir | modified on march 02 2025</span>
+                        </div>
+                        <div class="slide">
+                            <img src="ishikawa.jpg" alt="Latest Anime News 4">
+                            <p>Voice Actor Announces New Project!</p>
+                            <span>by joyk jamin | 1 day ago</span>
+                        </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="trending_news">
+            <div class="container">
+                <h3>Trending Now</h3>
+                <div class="container2">
+                    <div class="trending_item">
+                        <img src="the-10-best-anime-of-2024-ranked.avif" alt="Trending Anime">
+                        <p>Top 5 Anime to Watch This Season</p>
+                        <div class="actions_bar">
+                            <i class='bx bxs-dislike'></i>
+                            <i class='bx bxs-like'></i>
+                            <i class='bx bxs-comment'></i>
+                        </div>
+                    </div>
+                    <div class="trending_item">
+                        <img src="newgames.jpg" alt="Trending Anime">
+                        <p>Most Anticipated Anime Games Coming Soon</p>
+                        <div class="actionsbar">
+                            <i class='bx bxs-dislike'></i>
+                            <i class='bx bxs-like'></i>
+                            <i class='bx bxs-comment'></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="other-news">
+            <div class="container">
+                <h2>More Anime News</h2>
+                <div class="news-grid">
+                    <div class="news-article">
+                        <img src="manga.jpg" alt="Anime News Article">
+                        <h4>New JJK Manga Chapter Released!</h4>
+                        <p>The latest chapter of the popular manga has just dropped...</p>
+                        <div class="actions-bar">
+                            <i class='bx bxs-dislike'></i>
+                            <i class='bx bxs-like'></i>
+                            <i class='bx bxs-comment'></i>
+                        </div>
+                    </div>
+                    <div class="news-article">
+                        <img src="second.jpg" alt="Anime News Article">
+                        <h4>Fate/Grand Order Anime Adaptation Gets Second Season!</h4>
+                        <p>Fans rejoice as their favorite anime gets renewed...</p>
+                        <div class="actions-bar">
+                            <i class='bx bxs-dislike'></i>
+                            <i class='bx bxs-like'></i>
+                            <i class='bx bxs-comment'></i>
+                        </div>
+                    </div>
+                    <div class="news-article">
+                        <img src="newseason.jpg" alt="Anime News Article">
+                        <h4>One Piece-Egg Head anime season 2 release date </h4>
+                        <p>this is big announcement from Toei animation...</p>
+                        <div class="actions-bar">
+                            <i class='bx bxs-dislike'></i>
+                            <i class='bx bxs-like'></i>
+                            <i class='bx bxs-comment'></i>
+                        </div>
+                    </div>
+                    <div class="news-article">
+                        <img src="allmight.jpg" alt="Anime News Article">
+                        <h4>Voice Actor Interview: Behind the Scenes</h4>
+                        <p>Get to know the voice behind allmight character...</p>
+                        <div class="actions-bar">
+                            <i class='bx bxs-dislike'></i>
+                            <i class='bx bxs-like'></i>
+                            <i class='bx bxs-comment'></i>
+                        </div>
+                    </div>
+                    <div class="news-article">
+                        <img src="farewell.jpg" alt="Anime News Article">
+                        <h4>the anniversary of dragonball daima</h4>
+                        <p>it is said that DB daima will end the day Sir Akira passed away...</p>
+                        <div class="actions-bar">
+                            <i class='bx bxs-dislike'></i>
+                            <i class='bx bxs-like'></i>
+                            <i class='bx bxs-comment'></i>
+                        </div>
+                    </div>
+                    <div class="news-article">
+                        <img src="music.jpg" alt="Anime News Article">
+                        <h4>Anime Music Video of the Week!</h4>
+                        <p>Check out this amazing fan-made music video...</p>
+                        <div class="actions-bar">
+                            <i class='bx bxs-dislike'></i>
+                            <i class='bx bxs-like'></i>
+                            <i class='bx bxs-comment'></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <section class="industry-news">
+            <div class="container">
+                <h2>Industry News</h2>
+                <div class="industry-container">
+                    <div class="single-article">
+                        <img src="project.jpg" alt="Industry News Article">
+                        <h3>Anime Studio Announces New Project</h3>
+                        <p>A major anime studio has just revealed details about their upcoming...</p>
+                        <div class="actions-bar">
+                            <i class='bx bxs-dislike'></i>
+                            <i class='bx bxs-like'></i>
+                            <i class='bx bxs-comment'></i>
+                        </div>
+                    </div>
+                    <div class="related-articles">
+                        <h4>Related Articles</h4>
+                        <div class="related-article-item">
+                            <img src="trend1.jpg" alt="Related Article">
+                            <p>Market Trends in the Anime Industry</p>
+                            <div class="actions-bar">
+                                <i class='bx bxs-dislike'></i>
+                                <i class='bx bxs-like'></i>
+                                <i class='bx bxs-comment'></i>
+                            </div>
+                        </div>
+                        <div class="related-article-item">
+                            <img src="trend2.jpg" alt="Related Article">
+                            <p>Impact of Streaming on Anime Production</p>
+                            <div class="actions-bar">
+                                <i class='bx bxs-dislike'></i>
+                                <i class='bx bxs-like'></i>
+                                <i class='bx bxs-comment'></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Your source for the latest anime news, reviews, and more!</p>
+            </div>
+            <div class="footer-section">
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Copyright</a></li>
+                    <li><a href="#">Partners</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <p>&copy; 2023 DOJnews. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="newspaper.js">
+       
+    </script>
+</body>
+</html>
